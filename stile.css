@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    background-color: rgb(107, 126, 124);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sheet {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-auto-rows: minmax(min-content, auto);
+    background-color: white;
+    width: 700px;
+    box-shadow: 0px 10px 50px rgb(63, 63, 63);
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+/*colores de cajas*/
+.caja1,
+.caja5 {
+    background-color: rgb(189, 198, 195);
+}
+
+.caja2,
+.caja6 {
+    background-color: rgb(11, 34, 24);
+    color: white;
+}
+
+.caja4,
+.caja8 {
+    background-color: rgb(42, 61, 53);
+    color: white;
+}
+
+/*estilo de caja 1*/
+.caja1,
+.caja2,
+.caja3,
+.caja5,
+.caja6,
+.caja7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja1{
+    padding: 20px 10px;
+}
+
+.caja1 img {
+    width: 60px;
+    height: 60px;
+}
+
+.caja1 h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.caja1 span {
+    font-size: 12.5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5px auto 0px auto;
+    color: rgb(88, 88, 88);
+}
+
+.caja1 div {
+    margin: 10px;
+}
+
+/*estilos logo 2*/
+.caja2 {
+    span{
+        font-size: 36px;
+    }
+    
+}
+
+/*estilos logo3*/
+.caja3 {
+    padding: 30px 0;
+    align-self: start;
+    
+    .text {
+        width: 60%;
+        text-align: start;
+        padding: 0px 0px 0px 30px;
+
+        h5 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: rgb(130, 128, 128);
+        }
+    }
+
+    .data {
+        width: 40%;
+        text-align: end;
+        padding: 0px 20px 0px 0px;
+
+        h5 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+/*estilos logo 4*/
+.caja4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h5 {
+        margin: 3px;
+        font-size: 16px;
+    }
+
+    span {
+        color: rgb(138, 150, 138);
+        font-size: 16px;
+        margin-bottom: 5px
+    }
+}
+
+/*estilos caja5*/
+.caja5 {
+    padding: 20px 0;
+
+    table {
+        width: 100%;
+        height: 180px;
+        font-size: 16px;
+        padding: 10px 0px 10px 40px;
+        th{
+            padding-right: 20px;
+        }
+    }
+
+    .primero {
+        margin: 0px 20px;
+    }
+
+    .medio {
+        text-align: start;
+    }
+}
+
+/*estilos caja6*/
+.caja6 {
+    table {
+        width: 100%;
+        height: 180px;
+        font-size: 16px;
+        padding: 10px 20px 10px 20px;
+    }
+}
+
+.caja7 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    span{
+        color:rgb(135, 138, 137)
+    }
+    input{
+        background-color: rgb(171, 196, 196);
+        border-radius: 2px;
+    }
+    
+    label{
+        margin-bottom: 10px;
+    }
+
+    .lista1 {
+        display: flex;
+        width: 100%;
+        height: minmax(min-content, auto);
+        justify-content: end;
+        align-items: center;
+
+        h4 {
+            padding: 10px 10px 10px 0px;
+        }
+    }
+
+    .lista4 {
+        display: flex;
+        height: auto;
+        width: 100%;
+        padding-top: 8px;
+        .t1{
+            padding-left: 20px;
+            padding-bottom: 10px;
+        }
+        .t2{
+            padding-right: 20px;
+            color: rgb(141, 142, 142);
+        }
+    }
+
+    .lista2 {
+        display: flex;
+        width: 100%;
+        height: 32%;
+        padding-bottom: 30px ;
+
+        .tex {
+            h3 {
+                padding: 5px 0px 10px 20px;
+            }
+
+            p {
+                color: rgb(145, 148, 148);
+                padding: 0px 90px 10px 20px
+            }
+        }
+
+        .total {
+            color: rgb(150, 148, 148);
+
+            h3 {
+                margin: 5px 25px;
+            }
+        }
+
+    }
+
+    .lista3 {
+        height: auto;
+        padding-left: 20px;
+        padding-right: 90px;
+
+        h3 {
+            margin: 0px 0px 10px 0px;
+        }
+
+        .check{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 5px;
+            span{
+                
+                margin:auto;
+                margin-left: 0px;
+                margin-right: 5px;
+            }
+            
+        }
+        .name{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            input{
+                width: 52%;
+                margin-left: 2px;
+            }
+        }
+        .card{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            input{
+                width:45%;
+            }
+        }
+    }
+
+    .t1 {
+        text-align: left;
+        width: 70%;
+    }
+
+    .t2 {
+        text-align: right;
+        width: 30%;
+    }
+}
+
+
+/*estilo caja 8*/
+.caja8 {
+    padding: 20px;
+
+    .uno {
+        height: minmax(min-content, auto);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        h4 {
+            color: rgb(138, 150, 138);
+            padding: 10px 0px 10px 40px;
+        }
+    }
+
+    .dos {
+        display: flex;
+        height: 50%;
+
+        h3 {
+            margin: 5px 0px 0px 40px;
+        }
+    }
+
+    .tres {
+        .linea {
+            border-top: 3px solid white;
+            margin: 0px 15px;
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            font-size: 15px;
+        }
+    }
+
+}
+
+/*tabla 1*/
+.primero {
+    padding-right: 20px;
+}
+
+.tbody {
+    color: rgb(72, 72, 72);
+}
+@media (max-width: 700px){
+    .caja7{
+        .lista3{
+            .check, .name, .card{
+               display: flex;
+               flex-wrap: wrap; 
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 490px){
+    .caja2{
+        padding: 0px 10px 0 10px;
+    }
+    .caja6 {
+        table{
+            thead{
+                tr{
+                    th{
+                        padding-bottom: 20px;
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+}
+@media (max-width: 440px){
+    .caja1{
+        flex-wrap: wrap;
+    }
+    .caja3{
+        flex-wrap: wrap;
+        .data{
+            text-align: left;
+            h5{
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px){
+    .sheet{
+        grid-template-columns: 60% 40%;
+        width: 100%;
+    }
+
+    .caja7{
+        .lista1{
+            h4{
+                padding: 10px 0 10px 0 ;
+            }
+           
+        }
+        .lista4{
+            flex-direction: column-reverse;
+            .t2{
+                display: flex;
+                width: 100%;
+                justify-content: right ;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 380px){
+    .sheet{
+        .caja2{
+            span{
+                font-size: 25px;
+            }
+        }
+        .caja5{
+            table{
+                padding-left:10px ;
+                th{
+                    padding-right: 5px;
+                }
+            }
+        }
+        .caja8{
+            padding: 20px 0 0 0;
+        }
+    }
+
+}
